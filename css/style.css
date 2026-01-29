@@ -764,16 +764,3 @@
     display: none;
   }
 }
-/* FIX menu hamburguesa mobile */
-@media (max-width: 991px) {
-  .hamburger {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 9999;
-  }
-
-  .navbar {
-    position: relative;
-  }
-}
