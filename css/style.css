@@ -764,3 +764,12 @@
     display: none;
   }
 }
+@media (max-width: 991.98px) {
+  .navbar .hamburger {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top) + 12px);
+    right: 16px;
+    left: auto !important;
+    z-index: 99999;
+  }
+}
