@@ -34,11 +34,13 @@
             $('.back-to-top').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+$('.back-to-top').click(function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
-
+});
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({

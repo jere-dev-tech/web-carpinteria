@@ -773,3 +773,58 @@
     z-index: 99999;
   }
 }
+/* ===== ABOUT CENTERED (FIX REAL) ===== */
+
+.about-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.about-text .section-title {
+  text-align: center;
+}
+
+.about-text p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text .row {
+  justify-content: center;
+}
+
+.about-text .col-sm-6 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile: respiración correcta */
+@media (max-width: 991.98px) {
+  .about-content {
+    padding: 0 16px;
+  }
+}
+.about-text .section-title h1 {
+  text-align: center !important;
+}
+/* ===== Offset para anclas con navbar fija ===== */
+#servicios {
+  scroll-margin-top: 90px; /* ajustá según la altura real del navbar */
+}
+/* ===== Section title centered FIX ===== */
+.section-title-center {
+  text-align: center;
+}
+
+.section-title-center::before,
+.section-title-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
